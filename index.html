@@ -183,32 +183,20 @@
 <h2 id="部署到Github上"><a href="#部署到Github上" class="headerlink" title="部署到Github上"></a>部署到Github上</h2><ul>
 <li><p>新建一个Repository</p>
 <p>  Repository名字必须是你github账号的用户名。</p>
-<p>  例如：<br>  Yoke123.github.io</p>
+<p>  例如：Yoke123.github.io</p>
 </li>
 <li><p>然后是本地的blog文件配置：</p>
 <p>  blog目录下面有一个 _config.yml 文件 打开它</p>
 <p>  找到下面这些代码进行修改</p>
-<pre><code>deploy:
-
-     type: git
-
-     repo: #这里填写你前面创建Repository的地址
-
-     branch: master
-</code></pre></li>
-</ul>
-<ul>
+  <figure class="highlight dts"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">deploy:</span></div><div class="line"><span class="symbol"></span></div><div class="line">     type: git</div><div class="line"><span class="symbol"></span></div><div class="line">     repo: <span class="meta">#这里填写你前面创建Repository的地址</span></div><div class="line"><span class="symbol"></span></div><div class="line">     branch: master</div></pre></td></tr></table></figure>
+</li>
 <li><p>然后在blog目录下面输入:</p>
-<pre><code>npm install hexo-deployer-git --save
-</code></pre><p>  可能会报错，无视即可。</p>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></div></pre></td></tr></table></figure>
+<p>  可能会报错，无视即可。</p>
 </li>
 <li><p>然后是部署三步骤:</p>
-<pre><code>hexo clean #清除缓存文件
-
-hexo generate #生成静态页面至public目录
-
-hexo deploy #将.deploy目录部署到GitHub
-</code></pre></li>
+  <figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">hexo clean #清除缓存文件</div><div class="line"></div><div class="line">hexo <span class="keyword">generate</span> #生成静态页面至public目录</div><div class="line"></div><div class="line">hexo deploy #将<span class="variable">.deploy</span>目录部署到GitHub</div></pre></td></tr></table></figure>
+</li>
 </ul>
 <p>大致流程就这样，我知道有很多坑没写。以后会慢慢补充=_=</p>
 <p>参考文章；</p>
@@ -368,11 +356,11 @@ hexo deploy #将.deploy目录部署到GitHub
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">心得</a>
+                <a href="javascript:void(0)">其他</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">其他</a>
+                <a href="javascript:void(0)">心得</a>
               </li>
             
             <div class="clearfix"></div>
